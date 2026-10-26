@@ -135,7 +135,7 @@ $('b1').onclick=()=>{
  setTimeout(()=>$('next').classList.add('on'),4200);
 };
 const NAME='Meri Choti',FROM='Bhoot';
-const LETTER=`${NAME},\n\n Sorry🥺💗\n\n— ${FROM}`;
+const LETTER=`${NAME},\n\n Sorry🥺💗\n Mafi Sarkar \n\n— ${FROM}`;
 let ac,mus=false,tm,si=0;
 const seq=[523,659,784,988,880,784,659,587,523,659,784,1047,988,880,784,659];
 function note(f){const o=ac.createOscillator(),g=ac.createGain(),t=ac.currentTime;o.type='triangle';o.frequency.value=f;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.08,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+1.2);o.connect(g);g.connect(ac.destination);o.start();o.stop(t+1.3)}
